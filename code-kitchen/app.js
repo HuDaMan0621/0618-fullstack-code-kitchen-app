@@ -17,8 +17,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/api/v1/', apiRouter);
 
-// catch 404 and forward to error handler, now react is handling it
-app.get('*', (req, res) => {
+app.get((req, res) => {
   res.sendFile(path.resolve(__dirname, 'client/build/index.html'))
 })
 
@@ -30,7 +29,7 @@ app.use(function(err, req, res, next) {
 
   // render the error page
   res.status(err.status || 500);
-  res.json('error');
+  res.json(err);
 });
 
 module.exports = app;

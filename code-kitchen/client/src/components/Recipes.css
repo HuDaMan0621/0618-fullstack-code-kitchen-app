@@ -1,6 +1,40 @@
 .box {
-    
-    width: 25%;
-    height: 25%;
-    background-color: blue;
+    /* display: grid; */
+    width: 50vh;
+    height: 50vh;
+    border: 3px, solid, white;
+    padding: 5px;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    /* justify-content: center; */
+    /* justify-content: space-evenly; */
+    margin: 0 auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+.RecipeDetails {
+    width: 50vh;
+    height: 50vh;
+    /* border: 200px, solid, brown; */
+    border: 1px solid #eee;
+    padding: 5px;
+    /* background-color: brown; */
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    /* width: 500px; */
+    max-width: 90%;
+}
+
+.Card {
+    border: 3px solid white;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20 0;
+    margin-bottom: 10px;
+    width: 500px;
+    max-width: 90%;
 }

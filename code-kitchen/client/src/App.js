@@ -1,22 +1,21 @@
 import React from 'react';
-// import logo from './logo.svg';
 import './App.css';
 import Recipes from './components/Recipes';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'; //adding the browser, switch and router after npm install react-router-dom
-import ReceipeDetails from './components/ReceipeDetails';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import RecipeDetails from './components/RecipeDetails';
+import RecipeForm from './components/RecipeForm';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="App">
-        <header className="App-header">
-          <Switch>
-            <Route path="/" exact component={Recipes} />
-            <Route path="/recipes/:id" component={ReceipeDetails} />
-          </Switch>
-        </header>
+        <Switch>
+          <Route path="/" exact component={Recipes} />
+          <Route path="/recipes/new" exact component={RecipeForm} />
+          <Route path="/recipes/:id" component={RecipeDetails} />
+        </Switch>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 

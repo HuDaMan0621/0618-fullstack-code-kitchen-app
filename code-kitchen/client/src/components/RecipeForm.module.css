@@ -1,0 +1,22 @@
+.RecipeForm {
+    margin: 0 auto;
+    width: 500px;
+    max-width: 90%;
+}
+
+.formGroup{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+.formGroup label{
+    margin-bottom: 10px;
+}
+
+.formGroup ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
